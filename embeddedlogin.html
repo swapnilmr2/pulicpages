@@ -1,31 +1,40 @@
-<html>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
 
-<head>
-TEST
-    <meta name=”salesforce-community” content=”https://gmailcomcicd2-dev-ed.develop.my.site.com/embedded“>
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-    <meta name=”salesforce-client-id” content=”….Consumer Key from Connected App….“>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
 
-    <meta name=”salesforce-mode” content=”inline-callback”>
+<form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DHp00000AvzF4" method="POST">
 
-    <meta name=”salesforce-save-access-token” content=”false”>
+<input type=hidden name="orgid" value="00DHp00000AvzF4">
+<input type=hidden name="retURL" value="http://">
 
-    <meta name=”salesforce-allowed-domains” content=”https://swapnilmr2.github.io/pulicpages/embeddedlogin.html“>
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="swapnil.more@salesforce.com">                                    -->
+<!--  ----------------------------------------------------------------------  -->
 
-    <meta name=”salesforce-redirect-uri” content=”https://swapnilmr2.github.io/pulicpages/embeddedlogin.html“>
+<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
 
-    <meta name=”salesforce-target” content=”#salesforce-login”>
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
 
-    <meta name=”salesforce-login-handler” content=”onLogin”>
+<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
 
-    <meta name=”salesforce-logout-handler” content=”onLogout”>
+<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
 
-    <script src=”https://gmailcomcicd2-dev-ed.develop.my.site.com/demo/servlet/
+<label for="description">Description</label><textarea name="description"></textarea><br>
 
-            servlet.loginwidgetcontroller?type=javascript_widget” async defer></script>
+<input type="hidden"  id="external" name="external" value="1" /><br>
 
-</head> 
+<input type="submit" name="submit">
 
-<body></body>        
-
-</html>
+</form>
